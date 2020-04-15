@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-<form method="post" enctype="multipart/form-data">{%csrf_token%}
+<form method="post" class="uniform" enctype="multipart/form-data">{%csrf_token%}
 	<div class="col-6">
 	{{form|crispy}}
 	</div>
